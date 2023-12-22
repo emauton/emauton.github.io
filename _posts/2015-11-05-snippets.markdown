@@ -1,0 +1,52 @@
+---
+layout: post
+categories: tldr, organization, culture, remote
+date: 2015/11/05 22:40:00
+title: Snippets
+---
+
+A good habit I picked up at [the last place](https://google.com) was keeping
+"snippets" - short notes about what I worked on in a particular week. Something
+like this:
+
+---
+
+### Weekly snippets: $project cleanup; meetings & troubleshooting.
+
+"Short" week, in that I carried 2 days' work into it. All caught up (down?)
+now.
+
+*   Removed daemonization code from $project- we expect to run it under
+supervisor everywhere. $link
+
+*   Updated $otherproject to depend on that, plus Puppet changes to run
+under supervisor, deployed to $cluster.
+
+*   Ran and wrote up a $topic meeting. $link
+
+*   A frustrating day investigating $protocol issues in $cluster, much
+excluded but nothing pinpointed. Also some troubleshooting support during an
+incident on Thursday night - opened $task and updated $doc for followup.
+
+*   Wrote up a plan for $new\_project.
+
+*   Discussed $speculative\_project ideas with Eman & Charlie.
+
+*   Copious Free Time: started working on [Simple ESP Security Association Manager](https://github.com/emauton/sesame).
+
+---
+
+I write about this here because snippets are **brilliant**. I love having
+them to look back over - to find PRs I worked on, or docs I wrote, or when what
+happened, what I was thinking at a particular time. Without them, I'd be at a
+loss to explain what I did in any particular month, or would need to
+reconstruct that from old notes or emails. Writing a retrospective of my first
+year at [the new place](https://www.hostedgraphite.com) - do I get to call it
+new after a year? - pulled this into focus.
+
+Some of my colleagues keep daily snippets. I find that weekly is about the
+right granularity for me: real nitty-gritty detail is in a notebook I maintain
+day to day. We've taken to just submitting them to a Github repo, and made a
+robot to notify us when something's committed so we can follow along. As a
+remote worker, I need to make it easy for the team to stay in touch with my
+work, and snippets certainly help.

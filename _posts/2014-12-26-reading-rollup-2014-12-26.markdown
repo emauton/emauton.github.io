@@ -1,0 +1,67 @@
+---
+layout: post
+categories: reading
+date: 2014/12/26 00:00:00
+title: Reading rollup, 2014-12-26
+---
+
+<ul>
+
+  <li>
+    <p><a href="http://www.gsd.inesc-id.pt/~jleitao/pdf/srds07-leitao.pdf" title="Epidemic broadcast trees.">Epidemic broadcast trees - Leitâo et al.</a></p>
+    <p>This came up in the context of Riak scalability; IIUC it's part of the 2.0 series. Basho have <a href="https://www.youtube.com/watch?v=s4cCUTPU8GI">report from RICON 2013</a> on this.
+
+<p>
+Plumtree: "push-lazy-push multicast tree."
+</p>
+
+<p>
+Combines an eager gossip push strategy (along the spanning tree path) with a lazy gossip pull strategy (for recovery). You have a gossip overlay network (where each node has a partial view of the whole set), and a tree of nodes built on top of that. Cuts in the tree can be healed quickly by using the underlying (pull) network.
+</p>
+
+<blockquote>
+<p>"The links used for eager push are selected in such a way that their closure effectively builds a broadcast tree embedded in the random overlay network."</p>
+</blockquote>
+
+<p>
+Heh, GRAFT and PRUNE messages. :o)
+</p>
+
+<p>
+They include detailed descriptions of simulations backing up their claims.
+</p>
+
+Abstract:
+<blockquote>
+<p>"There is an inherent trade-off between epidemic and deterministic tree-based broadcast primitives. Tree-based approaches have a small message complexity in steady-state but are very fragile in the presence of faults. Gossip, or epidemic, protocols have a higher message complexity but also offer much higher resilience. This paper proposes an integrated broadcast scheme that combines both approaches. We use a low cost scheme to build and maintain broadcast trees embedded on a gossip-based overlay. The protocol sends the message payload preferably via tree branches but uses the remaining links of the gossip overlay for fast recovery and expedite tree healing. Experimental evaluation presented in the paper shows that our new strategy has a low overhead and that is able to support large number of faults while maintaining a high reliability."
+</p>
+</blockquote>
+</p>
+  </li>
+
+  <li>
+    <p><a href="http://www.researchgate.net/publication/225219256_Software_Testing_with_QuickCheck/file/e0b4952bf4213093ca.pdf" title="Software Testing with QuickCheck - John Hughes">Software Testing with QuickCheck - John Hughes</a></p>
+    <p>I'm working with Erlang these days, so I've been able to get an evaluation license for <a href="http://www.quviq.com/products/erlang-quickcheck/">Erlang QuickCheck</a>.
+
+<p>
+This paper is a tutorial, working from simple property-based tests through to testing properties of a stateful system using abstract state machines to model its behaviour.
+</p>
+<p>
+It's lucidly written: in tandem with the QuickCheck library documentation, I was able to work fairly confidently through the examples and most of the exercises, despite the work requiring the occasional brain-flip.
+</p>
+<p>
+I'm really enjoying the property-based testing approach, and this implementation has clearly had a lot of work and thought put into it. It feels like cheating to be able to do testing that feels so (executably!) formal and complete in this little code.
+</p>
+</p>
+  </li>
+
+  <li>
+    <p><a href="http://booktwo.org/notebook/aqd-remembrancer/" title="AQD: Remembrancer | booktwo.org">AQD: Remembrancer | booktwo.org</a></p>
+    <p>
+"A Quite Disposition" is <a href="http://booktwo.org/james-bridle/">James Bridle</a>'s "weak AI for gathering information about drones". It's a fascinating project. The Remembrancer is a free newspaper built automatically from the database.
+<blockquote><p>"In this world, we must take responsibility not only for our own actions, but the actions of the vast non-human assemblages we have built around us—from corporations to complex software systems—and acknowledge the moral and physical limits of our technologies, and ourselves."</p></blockquote></p>
+  </li>
+
+</ul>
+
+<small>Generated from [pinboard](https://pinboard.in/) by [pinroll](https://github.com/emauton/projects/tree/master/Toys/pinroll).</small>

@@ -1,0 +1,33 @@
+---
+layout: post
+categories: reading
+date: 2014/08/26 00:00:00
+title: Reading rollup, 2014-08-26
+---
+I signed up for [Pinboard](https://pinboard.in) a little over a month ago, finally cleared my "must read this" email labels to it, and haven't looked back. I find myself spending a lot of time in it now, reading documents and taking notes. Recommended.
+
+Following [jmason](http://jmason.org)'s [example](http://taint.org), I thought I'd start rolling some of the links I'm reading into blog posts, starting with older stuff.
+
+My pins are private, so I haven't bothered including tags, and I'm doing this on a pull basis rather than daily. :o)
+
+<ul>
+
+  <li>
+    <p><a href="http://www.eecs.berkeley.edu/~rcs/research/interactive_latency.html" title="Numbers Every Programmer Should Know By Year">Numbers Every Programmer Should Know By Year</a></p>
+    <p>Colin Scott&#039;s update to Jeff Dean and Peter Norvig&#039;s numbers, with an interactive sliding widget to get data for different years. Nice visual display of how things have changed (and are expected to). Also useful for <a href="http://emauton.org/2014/07/15/designing-for-brobdingnag/">back of the envelope estimation</a>.</p>
+  </li>
+
+  <li>
+    <p><a href="http://shaffner.us/cs/papers/tarpit.pdf" title="Out of the Tarpit - Mosely and Marks">Out of the Tarpit - Mosely and Marks</a></p>
+    <p>Fascinating paper that locates the source of the &quot;software crisis&quot; in complexity. Surveys the sources of that complexity, approaches to dealing with it, and a possible way forward (<a href="http://en.wikipedia.org/wiki/Functional_reactive_programming">functional reactive programming</a>).</p>
+  </li>
+
+  <li>
+    <p><a href="http://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/" title="On Being A Senior Engineer - Allspaw">On Being A Senior Engineer - Allspaw</a></p>
+    <p>John Allspaw&#039;s notes on what differentiates mature or senior engineers from junior. Good advice, lots of interesting links out.</p>
+  </li>
+
+</ul>
+
+<small>Generated from [pinboard](https://pinboard.in/) by [pinroll](https://github.com/emauton/projects/tree/master/Toys/pinroll).</small>
+

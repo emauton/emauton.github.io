@@ -1,0 +1,31 @@
+---
+layout: post
+categories: reading
+date: 2014/09/06 00:00:00
+title: Reading rollup, 2014-09-06
+---
+
+<ul>
+
+  <li>
+    <p><a href="http://debuggers.co/concurrency/c/systems-programming/2014/07/15/Russ-Cox.html" title="Debuggers: Russ Cox">Debuggers: Russ Cox</a></p>
+    <p><a href="http://debuggers.co">Debuggers</a> post about a lock concurrency problem in code on Plan9. As always, Cox writes brilliantly and clearly about deep technical topics. Note the links to debugging history notes at the end.</p>
+  </li>
+
+  <li>
+    <p><a href="http://bit-player.org/wp-content/extras/bph-publications/Sciences-1993-07-Hayes-EDSAC.pdf" title="The Discovery of Debugging - Brian Hayes">The Discovery of Debugging - Brian Hayes</a></p>
+    <p>Linked from rsc's article above. Great history piece on EDSAC and its first programmers.</p>
+    <p>Software was very much the &quot;stunted sibling&quot; of hardware in the earliest years. &quot;It appeared that programming might be tedious but not fundamentally difficult. A crucial discovery was yet to be made: the discovery of debugging.&quot;</p>
+    <p>&quot;The human reader passes over such errors without even seeing them, unconsciously filling in the intended meaning, but the machine is resolutely literal. It does only what it is told to do.&quot;</p>
+    <p>Nice description of the hellish misery of encoding programs for the EDSAC. :o) By September 1949 (6 months in), then-student David J. Wheeler had already written a basic relocatable-code loading facility, basically a linker, amazing.</p>
+    <p>Some really nice insight into the early days here. I wonder if there&#039;s something that comes *after* software - scalable architectures, maybe? - that we just haven&#039;t thought much about yet because we&#039;re so obsessed with the software itself.</p>
+  </li>
+
+  <li>
+    <p><a href="http://research.scee.net/files/presentations/gcapaustralia09/Pitfalls_of_Object_Oriented_Programming_GCAP_09.pdf" title="Pitfalls of Object Oriented Programming - Tony Albrecht">Pitfalls of Object Oriented Programming - Tony Albrecht</a></p>
+    <p>Deck about memory layout in high-performance games and how OO paradigms screw with optimal (columnar, for caching) layout of data in memory. Well worth a read, though these are problems I don't really want to have. :o)</p>
+  </li>
+
+</ul>
+
+<small>Generated from [pinboard](https://pinboard.in/) by [pinroll](https://github.com/emauton/projects/tree/master/Toys/pinroll).</small>

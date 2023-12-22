@@ -1,0 +1,42 @@
+---
+layout: post
+categories: reading
+date: 2014/09/27 00:00:00
+title: Reading rollup, 2014-09-27
+---
+
+Some news: I will start writing code for <a href="http://hostedgraphite.com">Hosted Graphite</a> next week.
+
+It's a (mostly) remote position, which makes it possible for me to spend winter in France with the family. We found a lovely place to live in an old medieval town on the Vienne. Spinning up a little French fluency now, remarkable how fast it comes when you've got a definite goal. :o)
+
+Hat-tip (as is often the case!) to <a href="taint.org">taint.org</a> for the first two links below.
+
+<ul>
+
+  <li>
+    <p><a href="https://github.com/Xfennec/cv" title="Coreutils viewer">Coreutils viewer</a></p>
+    <p>Clever!</p>
+    <p>A Linux tool to show progress for cp, rm, dd, ...</p>
+    <p>It simply scans /proc for interesting commands, and then uses the fd/ and fdinfo/ directories to find opened files and seek position, and reports status for the biggest file.</p>
+  </li>
+
+  <li>
+    <p><a href="https://www.usenix.org/system/files/conference/atc14/atc14-paper-ongaro.pdf" title="In Search of an Understandable Consensus Algorithm - Diego Ongaro and John Ousterhout, Stanford University">In Search of an Understandable Consensus Algorithm - Diego Ongaro and John Ousterhout, Stanford University</a></p>
+    <p>A great read. Lucid description of the replicated state machine problem, issues with Paxos, and how Raft works. Interesting that the <em>primary</em> goal was understandability. Maybe that should be the case for all software and algorithms ...</p>
+  </li>
+
+  <li>
+    <p><a href="http://queue.acm.org/detail.cfm?id=2482856" title="There&#039;s Just No Getting around It: You&#039;re Building a Distributed System - Mark Cavage, Joyent">There&#039;s Just No Getting around It: You&#039;re Building a Distributed System - Mark Cavage, Joyent</a></p>
+    <p>
+Good worked example of basic requirements &amp; back-of-the-envelope work for an image resizing service. Separation of services, API-focused design: <a href="http://emauton.org/2014/07/15/designing-for-brobdingnag/">familiar</a> approach.</p>
+<p>
+&quot;the goal is simply to highlight the realities and look at the basics required to build a distributed system... Too many applications are being built by stringing together a distributed database system with some form of application, and hoping for the best.&quot;
+</p>
+<p>
+&quot;Drawing parallels to a previous generation, services are the new process; they are the correct abstraction level for any discrete functionality in a system.&quot;
+</p>
+  </li>
+
+</ul>
+
+<small>Generated from [pinboard](https://pinboard.in/) by [pinroll](https://github.com/emauton/projects/tree/master/Toys/pinroll).</small>

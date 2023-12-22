@@ -1,0 +1,80 @@
+---
+layout: post
+categories: reading
+date: 2014/09/16 00:00:00
+title: Reading rollup, 2014-09-16
+---
+On holiday in France. It's nice here!
+
+<ul>
+
+  <li>
+    <p><a href="http://programmingisterrible.com/post/42215715657/postels-principle-is-a-bad-idea" title="Postel&#039;s Principle is a Bad Idea. - programming is terrible">Postel&#039;s Principle is a Bad Idea. - programming is terrible</a></p>
+    <p>Lots of interesting references here, and memorable quotes (as is often the way with <a href="http://programmingisterrible.com">tef</a>'s posts).</p>
+
+    <p>"If some data means two different things to different parts of your program or network, it can be exploited - Interoperability is achieved at the expense of security."</p>
+
+    <p>Examples from the Perl/C interface, TCP/IP, confused deputy, XSS.</p>
+
+    <p>"Notably, HTML5 gained a standardized parser, not for security reasons, but to ensure that bad HTML looks the same on every browser."</p>
+    <p>"Interoperability doesn't just mean working in the same way, but failing in the same way too."</p>
+  </li>
+
+  <li>
+    <p><a href="https://www.youtube.com/watch?v=aAb7hSCtvGw" title="How To Design A Good API and Why it Matters - Joshua Bloch">How To Design A Good API and Why it Matters - Joshua Bloch</a></p>
+    <p>Sensible notes on API design from someone who has very much been in the trenches.
+    <ul>
+<li>Public APIs are forever: one chance to get it right.</li>
+<li>Make it easy to do the right thing, difficult to the wrong thing, easy to evolve.</li>
+<li><em>Just</em> powerful enough to satisfy requirements.</li>
+<li>Gather requirements, and make a 1-page spec. Share. Pretend to code against it. Take example programs very seriously.</li>
+<li>Aim to displease everyone equally.</li>
+<li>Do one thing and do it well. Good names drive development.</li>
+<li><em>When in doubt, leave it out</em>.</li>
+<li>Don&#039;t let implementation details &quot;leak&quot; into API. Design serialized forms carefully.</li>
+<li>Minimize accessibility of everything.</li>
+<li>Documentation matters. Document <em>everything</em> in your public API.</li>
+<li>Bad decisions can limit performance; but don&#039;t warp the API to gain performance. Good design usually coincides with good performance.</li>
+<li>API must coexist peacefully with the platform: transliterated APIs are almost always broken.</li>
+<li>Minimize mutability. Prefer immutable; if mutable, keep state space small &amp; well-defined.</li>
+<li>Don&#039;t make the client do anything the module could - reduce boilerplate.</li>
+<li>Don&#039;t violate the principle of least astonishment.</li>
+<li>Provide programmatic access to all data available in string form!</li>
+<li>Use consistent parameter ordering across methods.</li>
+<li>Avoid return values that demand exceptional processing (e.g. return an empty collection instead of not_found).</li></ul></p>
+  </li>
+
+  <li>
+    <p><a href="http://blog.sanctum.geek.nz/actually-using-ed/" title="Actually using ed - Arabesque">Actually using ed - Arabesque</a></p>
+    <p>Cute tutorial on using ed. Fun to work through. There&#039;s a lot of other interesting stuff at this site, e.g. the &quot;<a href="http://blog.sanctum.geek.nz/series/unix-as-ide/">Unix as IDE</a>&quot; series.</p>
+  </li>
+
+  <li>
+    <p><a href="http://ninenines.eu/articles/erlang-scalability/" title="Nine Nines Article: Erlang Scalability">Nine Nines Article: Erlang Scalability</a></p>
+    <p>A set of notes on things that may limit an Erlang system&#039;s scalability:
+    <ul>
+    <li>Avoid NIFs if possible; e.g. use MessagePack rather than JSON;</li>
+    <li>Be careful what BIFs you use (example of erlang:decode_packet/3 in Cowboy);</li>
+    <li>Use binaries rather than lists, including for buffering/streaming;</li>
+    <li>Don&#039;t hesitate to create a custom pool of processes to do what a single gen_server might; similarly, a custom supervisor might sometimes be the right thing.</li>
+    <li>Use ets public or protected tables for LOLSPEED(tm).</li>
+    </ul>
+  </p>
+  </li>
+
+  <li>
+    <p><a href="http://blog.cloudflare.com/how-stacks-are-handled-in-go/" title="How Stacks are Handled in Go - Daniel Morsing">How Stacks are Handled in Go - Daniel Morsing</a></p>
+    <p>Clearly-written details of how goroutine stacks work (and how they soon will).</p>
+<p>
+Now: &quot;segmented&quot; stacks grow by allocating new segments with accounting information to find the previous outgrown. This can cause a &quot;hot split&quot; issue where the stack keeps growing and shrinking at the segment boundary, and releasing the new stack segment each time is expensive.
+</p>
+<p>
+Soon: &quot;stack copying&quot; creates a new segment double the size, and copies the old data to it. There&#039;s some accounting work that needs to be done here for pointers to stack data, and the Go devs are currently rewriting a pile of the runtime in Go to make this doable.
+</p>
+<p>
+This will also enable concurrent garbage collection in future - something which really helps in Erlang - though there are open issues with how this will work for shared heap objects in Go. I tend to prefer the Erlang shared-nothing approach ...</p>
+  </li>
+
+</ul>
+
+<small>Generated from [pinboard](https://pinboard.in/) by [pinroll](https://github.com/emauton/projects/tree/master/Toys/pinroll).</small>
