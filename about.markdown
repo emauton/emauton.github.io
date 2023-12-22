@@ -11,4 +11,4 @@ I've worked as a programmer, sysadmin and SRE across <a href="https://datadoghq.
 
 I live with my family in the hills above Nenagh, Co. Tipperary.
 
-<img src="/img/cian.jpg" alt="A photograph of Cian smiling at the camera." />
+<img src="/img/cian-who.jpg" alt="A photograph of Cian smiling at the camera, wearing a Doctor Who scarf." />
