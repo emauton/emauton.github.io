@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-I'm Cian Synnott, and this is where I put my technology-related writing.
+I'm Cian Synnott, and this is where I put my technology-related writing, with an occasional note about family or hobbies.
 
 I'm interested in large-scale distributed systems, approaches to production operations &amp; security, and how technical teams work.
 
