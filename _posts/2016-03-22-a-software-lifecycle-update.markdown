@@ -10,4 +10,4 @@ It upends the classic software lifecycle image in a useful way, I think: probabl
 
 I can't for the life of me find the talk, but I'm always telling people about the image, so I'm just putting it here somewhere I can link to while making sure it's credited to Chris. :o)
 
-<img src="/img/life-of-software-cdjones.png" alt="A software lifecycle process diagram making it clear how important the operations part is." width="600"></img>
+<img src="/img/life-of-software-cdjones.png" alt="A software lifecycle process diagram making it clear how important the operations part is." width="600" />
