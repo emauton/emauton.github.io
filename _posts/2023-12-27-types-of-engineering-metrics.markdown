@@ -43,7 +43,7 @@ journeys](https://en.wikipedia.org/wiki/User_journey); may also include
 adoption and capacity metrics. **Often** have alerting attached.
 
 While we want to _define_ these precisely - see for example the [Art of SLOs
-workshop](https://sre.google/resources/practices-and-processes/art-of-slos/)) -
+workshop](https://sre.google/resources/practices-and-processes/art-of-slos/) -
 it's OK for there to be uncertainties, subtleties, and warnings attached. Often
 we have to choose proxies for customer experience, or it's prohibitively
 expensive to measure some important part of a user journey.
