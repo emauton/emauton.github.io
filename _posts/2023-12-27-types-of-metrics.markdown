@@ -16,7 +16,8 @@ can stimulate.
 
 See [Will Larson's
 notes](https://lethain.com/measuring-engineering-organizations/) for more
-discussion and a broader taxonomy.
+discussion and a broader taxonomy, mostly focused on "investment-level" metrics
+below.
 
 ### 1. Operations-level metrics
 
