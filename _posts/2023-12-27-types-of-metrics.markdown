@@ -37,13 +37,13 @@ _Caveat operator_.
 Emitted by our services and the infrastructure around them (for example,
 [synthetic probes](https://en.wikipedia.org/wiki/Synthetic_monitoring)). Often
 used as
-[service-level-indicators](https://en.wikipedia.org/wiki/Service_level_indicator)
+[service level indicators](https://en.wikipedia.org/wiki/Service_level_indicator)
 to understand customer experience and [user
 journeys](https://en.wikipedia.org/wiki/User_journey); may also include
 adoption and capacity metrics. **Often** have alerting attached.
 
-While we want to _define_ these precisely (see for example the [Art of SLOs
-workshop](https://sre.google/resources/practices-and-processes/art-of-slos/)),
+While we want to _define_ these precisely - see for example the [Art of SLOs
+workshop](https://sre.google/resources/practices-and-processes/art-of-slos/)) -
 it's OK for there to be uncertainties, subtleties, and warnings attached. Often
 we have to choose proxies for customer experience, or it's prohibitively
 expensive to measure some important part of a user journey.
@@ -66,5 +66,5 @@ edge-cases attached. It's almost always a proxy - often a "trailing edge"
 indicator - for some important effort we're trying to drive across the
 business.
 
-It's OK for a metric like this to have a page (or a whole document) explaining
+It's OK for a metric like this to have a page or a whole document explaining
 it, as long as we agree it provides a useful "needle we can move" over time.
