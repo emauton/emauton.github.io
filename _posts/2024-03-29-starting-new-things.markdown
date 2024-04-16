@@ -8,7 +8,7 @@ categories: thoughts work
 From time to time I'm asked how I approach getting started in a new area - a new job or a new role. I'm told I do this well. Notes I find myself sharing:
 
 *   A [short piece on onboarding](https://gist.github.com/emauton/e470a1f84da1c615c393d7b37a37624d) I wrote about my first 6 months at Datadog.
-    *   This was quickly typed out as a response to a question on [RLS](https://randsinrepose.com/welcome-to-rands-leadership-slack/); it's a bit stream-of-connsciousness but interesting.
+    *   This was quickly typed out as a response to a question on [RLS](https://randsinrepose.com/welcome-to-rands-leadership-slack/); it's a bit stream-of-consciousness but interesting.
     *   The summary [video](https://www.youtube.com/watch?v=aLu3NazBbLw) and [notes](https://www.ricklindquist.com/notes/the-first-90-days) on Watkins' [The First 90 Days](https://hbr.org/books/watkins) linked here are particularly useful I think.
 *   When moving to my current role in late 2022 - which is larger than the one I started in - I took similar approaches, in particular the ongoing list of "hypotheses/questions" to guide early conversations.
     *   I also collected notes on "hopes" - a common question I have when meeting folks in a new area is what they're hoping for (or worried about) as a new senior person steps into the space.
